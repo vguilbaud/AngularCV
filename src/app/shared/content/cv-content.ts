@@ -1,4 +1,4 @@
-import { CVExperienceTraining } from "../cv-class";
+import { CVExperienceTraining, CVHobby, CVSkills } from "../cv-class";
 
 const highSchool: CVExperienceTraining = new CVExperienceTraining(
   'Baccalauréat ES',
@@ -183,6 +183,15 @@ const guitarJob: CVExperienceTraining = new CVExperienceTraining(
   ''
 )
 
+const relevantXp: Array<CVExperienceTraining> = [
+  badakan,
+  sykes,
+  odesia,
+  workingHighSchool,
+  apas,
+  guitarJob
+]
+
 const grapePicking: CVExperienceTraining = new CVExperienceTraining(
   'Vendangeur',
   'experience',
@@ -267,3 +276,127 @@ const dia: CVExperienceTraining = new CVExperienceTraining(
   ''
 )
 
+const randomXp: Array<CVExperienceTraining> = [
+  grapePicking,
+  insurrance,
+  lommeSchool,
+  foirfouille,
+  palmBeach,
+  dia,
+]
+
+const allXp: Array<CVExperienceTraining> = [...relevantXp, ...randomXp];
+
+const allCursus: Array<CVExperienceTraining> = [...trainings, ...allXp];
+
+const skillEfficiency: CVSkills = new CVSkills(
+  'Efficacité',
+  ['divers', 'webdev'],
+  '',
+)
+
+const skillCreativity: CVSkills = new CVSkills(
+  'Créativité',
+  ['divers', 'webdev', 'music', 'entertainment'],
+  '',
+)
+
+const skillAdapt: CVSkills = new CVSkills(
+  'Adaptation',
+  ['divers', 'webdev', 'music', 'entertainment', 'clients'],
+  '',
+)
+
+const skillSocial: CVSkills = new CVSkills(
+  'Relationnel',
+  ['divers', 'entertainment', 'clients'],
+  '',
+)
+
+const skillHtml: CVSkills = new CVSkills(
+  'HTML5',
+  ['webdev'],
+  '',
+)
+
+const skillScss: CVSkills = new CVSkills(
+  'Scss',
+  ['webdev'],
+  '',
+)
+
+const skillJavaScript: CVSkills = new CVSkills(
+  'JavaScript',
+  ['webdev'],
+  '',
+)
+
+const skillGit: CVSkills = new CVSkills(
+  'Git & GitHub',
+  ['webdev'],
+  '',
+)
+
+const skillAngular: CVSkills = new CVSkills(
+  'Angular',
+  ['webdev'],
+  '',
+)
+
+const skillEnglish: CVSkills = new CVSkills(
+  'Anglais',
+  ['webdev', 'divers', 'clients', 'entertainment'],
+  '',
+)
+
+const skillSpanish: CVSkills = new CVSkills(
+  'Espagnol',
+  ['divers', 'clients', 'entertainment'],
+  '',
+)
+
+const allSkills: Array<CVSkills> = [skillEfficiency, skillCreativity, skillAdapt, skillSocial, skillHtml, skillScss, skillJavaScript, skillGit, skillAngular, skillEnglish, skillSpanish];
+
+const hobbyTravel: CVHobby = new CVHobby(
+  'Voyages',
+  '',
+  ['divers'],
+  [],
+)
+
+const hobbyMusic: CVHobby = new CVHobby(
+  'Guitare',
+  'Guitare, Basse, Ukulele et Piano',
+  ['music', 'entertainment'],
+  []
+)
+
+const hobbyTheatre: CVHobby = new CVHobby(
+  'Théâtre',
+  '',
+  ['divers', 'entertainment'],
+  []
+)
+
+const hobbyGames: CVHobby = new CVHobby(
+  'Jeux',
+  'Échecs, Jeux de plateau, Jeux video, Belote, Tarot',
+  ['divers', 'entertainment'],
+  []
+)
+
+const hobbyVideo: CVHobby = new CVHobby(
+  'Cinema et séries',
+  '',
+  ['divers', 'entertainment'],
+  [],
+)
+
+const hobbySports: CVHobby = new CVHobby(
+  'Sport',
+  'Football, tennis et parapente',
+  ['divers', 'entertainment'],
+  [],
+)
+
+const allHobbies: Array<CVHobby> = [hobbyTravel, hobbyMusic, hobbyTheatre, hobbyGames, hobbyVideo, hobbySports];

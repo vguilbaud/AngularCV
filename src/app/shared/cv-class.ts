@@ -18,17 +18,16 @@ export class CVHobby {
   constructor(
     public label: string,
     public descripiton: string,
-    public img: string,
     public tags: Array<string>,
+    public img: Array<string>,
   ) {}
 }
 
 export class CVSkills {
   constructor(
     public label: string,
-    public img: string,
-    public description: string,
     public tags: Array<string>,
+    public img: string,
   ) {}
 }
 
